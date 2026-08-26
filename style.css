@@ -1235,7 +1235,7 @@ h2 {
     border-radius: 80px;
     overflow: hidden;
     margin-top: 40px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .wwa-img-main img {
@@ -1253,7 +1253,7 @@ h2 {
     z-index: 3;
     border-radius: 200px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
 .wwa-img-small img {
@@ -1474,9 +1474,8 @@ h2 {
 
 /* Custom Meds */
 .custom-meds {
-    background: linear-gradient(rgba(0, 75, 156, 0.85), rgba(0, 75, 156, 0.85)), url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=1920') fixed center center/cover;
+    background: linear-gradient(rgba(0, 75, 156, 0.85), rgba(0, 75, 156, 0.85)), url('assets/full-blister-packs.jpg') fixed center center/cover;
     color: var(--white);
-    padding: 100px 0;
 }
 
 .custom-meds h2 {
@@ -1579,7 +1578,7 @@ h2 {
 
 /* Owners Section Redesign */
 .owners-section-new {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #fff;
 }
 
@@ -1657,7 +1656,9 @@ h2 {
     object-fit: cover;
     border-radius: 33px;
     box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.2);
-}/* Overriding team card for new design */
+}
+
+/* Overriding team card for new design */
 .team-card {
     background: var(--white);
     border-radius: 20px;
@@ -1667,6 +1668,7 @@ h2 {
     transition: transform 0.3s ease;
     overflow: visible;
 }
+
 .team-img img {
     border-radius: 15px;
     width: 100%;
@@ -1674,27 +1676,32 @@ h2 {
     object-fit: cover;
     margin-bottom: 20px;
 }
+
 .team-info {
     padding: 0 10px 10px;
 }
+
 .team-info h4 {
     color: var(--primary-blue);
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
 }
+
 .team-info .role {
     color: var(--primary-green);
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 10px;
 }
+
 .team-social {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-top: 15px;
 }
+
 .team-social a {
     width: 30px;
     height: 30px;
@@ -1707,6 +1714,327 @@ h2 {
     font-size: 12px;
     transition: background-color 0.3s;
 }
+
 .team-social a:hover {
     background-color: var(--primary-blue);
+}
+
+/* Visit Us Creative Section */
+.visit-us-creative {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.visit-us-creative::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(47, 139, 60, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+}
+
+.vu-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+.vu-location-card {
+    flex: 1;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(7, 88, 184, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 400px;
+}
+
+.vu-map-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.vu-map-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vu-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(7, 88, 184, 0.95) 0%, rgba(7, 88, 184, 0.4) 100%);
+}
+
+.vu-location-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    color: var(--white);
+}
+
+.vu-location-content .icon {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(47, 139, 60, 0.3);
+}
+
+.vu-location-content h3 {
+    font-size: 28px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.vu-location-content p {
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.vu-details {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.vu-detail-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.vu-detail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.vu-icon-box {
+    width: 55px;
+    height: 55px;
+    background: rgba(47, 139, 60, 0.1);
+    color: var(--primary-green);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.vu-text {
+    flex: 1;
+    width: 100%;
+}
+
+.vu-text h4 {
+    font-size: 20px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.vu-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vu-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: 15px;
+}
+
+.vu-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.vu-list li span {
+    color: var(--text-gray);
+}
+
+.vu-list li strong {
+    color: var(--text-dark);
+}
+
+.vu-desc {
+    color: var(--text-gray);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.vu-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.vu-tags span {
+    background: var(--bg-light);
+    color: var(--primary-blue);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid rgba(7, 88, 184, 0.1);
+}
+
+main.about-page+.footer {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 120' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C200,0 400,0 720,60 C1040,120 1240,80 1440,40 L1440,0 L0,0 Z' fill='%23f5f7fa' /%3E%3C/svg%3E");
+    margin-top: 0;
+}
+
+
+/* Team Section Background Shape */
+.team-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.team-bg-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.04;
+    pointer-events: none;
+}
+
+.team-bg-shape svg {
+    display: block;
+    height: 100%;
+    width: auto;
+}
+
+/* Owners Section Background Shape */
+.owners-section-new {
+    position: relative;
+    overflow: hidden;
+}
+
+.owners-container-new {
+    position: relative;
+    z-index: 1;
+}
+
+.owners-bg-shape {
+    position: absolute;
+    top: -174px;
+    right: -95px;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    /* Very low opacity since we use vibrant primary colors now */
+}
+
+.owners-bg-shape svg {
+    display: block;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Fix Who We Are Section Padding due to overlapping image */
+.who-we-are {
+    padding-bottom: 170px; /* Accounts for the -90px bottom position of the small overlapping image to maintain an 80px visual gap */
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 80px 0;
+}
+.faq-accordion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq-item {
+    margin-bottom: 15px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+.faq-item.active {
+    box-shadow: 0 10px 30px rgba(7, 88, 184, 0.15);
+    border: 1px solid rgba(7, 88, 184, 0.2);
+}
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 20px 25px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.faq-item.active .faq-question {
+    color: var(--primary-green);
+}
+.faq-question i {
+    transition: transform 0.3s ease;
+    color: var(--primary-green);
+}
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+.faq-answer p {
+    padding: 0 25px 20px;
+    margin: 0;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+.faq-section + .footer {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 120' xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none'%3E%3Cpath d='M0,60 C200,0 400,0 720,60 C1040,120 1240,80 1440,40 L1440,0 L0,0 Z' fill='%23f5f7fa' /%3E%3C/svg%3E");
+    margin-top: 0;
 }

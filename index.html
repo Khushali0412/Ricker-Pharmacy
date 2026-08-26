@@ -16,7 +16,7 @@
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
-            <p>Free Shipping for orders over $50</p>
+            <p>Your Trusted Independent Pharmacy in Jacksonville, FL</p>
         </div>
     </div>
 
@@ -478,6 +478,42 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Frequently Asked <span class="text-primary">Questions</span></h2>
+                <p class="section-subtitle">Find answers to common questions about our pharmacy services.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <button class="faq-question">What are your hours of operation? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We are open Monday through Friday from 9:00 AM to 6:00 PM. We are closed on Saturdays and Sundays.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you provide health consultations? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, our pharmacists are available to answer your health-related questions, offer personalized advice, and help you understand your medications and supplements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you accept my insurance? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>We accept most major insurance plans, including Medicare and Medicaid. Please call us to verify your specific coverage.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can you compound specific medications? <i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We have specially trained professionals who prepare customized medications to meet each patient's specific needs, including veterinary compounding for pets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
@@ -587,6 +623,33 @@
 
         // Start autoplay
         resetInterval();
+    </script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-answer').style.maxHeight = null;
+                });
+
+                // Open if wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    const answer = faqItem.querySelector('.faq-answer');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+        
+        // Open the first FAQ by default
+        const firstFaq = document.querySelector('.faq-question');
+        if (firstFaq) {
+            firstFaq.click();
+        }
     </script>
 </body>
 </html>
