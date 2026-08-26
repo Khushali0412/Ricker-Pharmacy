@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricker Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>Free Shipping for orders over $50</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Compounding Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum
+                                                Drops</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a>
+                                        </li>
+                                        <li><a href="#"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Custom Care for You</h4>
+                                    <p>Discover personalized compounding solutions tailored to your unique needs.</p>
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400"
+                                        alt="Pharmacy Compounding">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Other Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-mortar-pestle"></i> Prescription
+                                                Compounding</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> Flu Shots and
+                                                Immunizations</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-box"></i> Adherence Packaging</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rotate"></i> Medication
+                                                Synchronization</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-stethoscope"></i> Medication Therapy
+                                                Management Services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health Screenings</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Comprehensive Pharmacy Care</h4>
+                                    <p>From immunizations to medication synchronization, we offer comprehensive services
+                                        to simplify your life.</p>
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400"
+                                        alt="Pharmacy Services">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down"
+                                style="font-size: 10px;"></i></a>
+                        <ul class="simple-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="btn btn-primary">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel-section">
+        <div class="hero-carousel">
+            <div class="hero-slides" id="heroSlides">
+                <!-- Slide 1 -->
+                <div class="hero-slide active">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Your Health,<br><span class="text-primary">Our Priority</span></h1>
+                            <p>Trusted medicines, advanced care, delivered to your doorstep. Welcome to Ricker Pharmacy.</p>
+                            <div class="hero-buttons">
+                                <a href="#" class="btn btn-secondary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="hero-badges">
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                    <div>
+                                        <strong>100% Genuine</strong>
+                                        <span>Original Products</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <div>
+                                        <strong>Fast Delivery</strong>
+                                        <span>On time, every time</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <div>
+                                        <strong>Secure Payments</strong>
+                                        <span>100% safe & secure</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=800" alt="Pharmacy Care">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-slide">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Committed to<br><span class="text-primary">Better Health</span></h1>
+                            <p>Discover a wide range of high-quality pharmaceutical products trusted by healthcare professionals and patients.</p>
+                            <div class="hero-buttons">
+                                <a href="#" class="btn btn-secondary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="hero-badges">
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-check-circle"></i>
+                                    <div>
+                                        <strong>WHO-GMP</strong>
+                                        <span>Certified</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-flask-vial"></i>
+                                    <div>
+                                        <strong>Quality</strong>
+                                        <span>Assurance</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                    <div>
+                                        <strong>Patient</strong>
+                                        <span>First Approach</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&q=80&w=800" alt="High Quality Pharmaceuticals">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-slide">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Expert<br><span class="text-primary">Compounding</span></h1>
+                            <p>Personalized medications prepared on-site to fit your exact needs. From hormone therapy to pediatrics.</p>
+                            <div class="hero-buttons">
+                                <a href="#" class="btn btn-secondary">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                            <div class="hero-badges">
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-mortar-pestle"></i>
+                                    <div>
+                                        <strong>Custom Made</strong>
+                                        <span>Just for you</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-user-nurse"></i>
+                                    <div>
+                                        <strong>Expert Staff</strong>
+                                        <span>Highly trained</span>
+                                    </div>
+                                </div>
+                                <div class="badge-item">
+                                    <i class="fa-solid fa-capsules"></i>
+                                    <div>
+                                        <strong>Any Format</strong>
+                                        <span>Creams to capsules</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800" alt="Compounding Pharmacy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="carousel-dots" id="carouselDots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Services -->
+    <section class="services">
+        <div class="container text-center">
+            <h2>Our <span class="text-primary">Healthcare</span> Services</h2>
+            <p class="section-subtitle">Comprehensive care for you and your family.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=400&q=80"
+                            alt="Retail Prescriptions">
+                        <div class="icon-circle"><i class="fa-solid fa-pills"></i></div>
+                    </div>
+                    <h3>Retail Prescriptions</h3>
+                    <p>Convenient prescription filling and counseling for your medication needs.</p>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=400&q=80"
+                            alt="Traditional Compounding">
+                        <div class="icon-circle"><i class="fa-solid fa-flask"></i></div>
+                    </div>
+                    <h3>Traditional Compounding</h3>
+                    <p>Customized medications tailored specifically for your individual needs.</p>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=400&q=80"
+                            alt="Medication Therapy">
+                        <div class="icon-circle"><i class="fa-solid fa-stethoscope"></i></div>
+                    </div>
+                    <h3>Medication Therapy Management</h3>
+                    <p>Personalized reviews to ensure your medications are safe and effective.</p>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?auto=format&fit=crop&w=400&q=80"
+                            alt="Vaccinations & Health">
+                        <div class="icon-circle"><i class="fa-solid fa-syringe"></i></div>
+                    </div>
+                    <h3>Vaccinations & Health Services</h3>
+                    <p>Immunizations and health screenings to keep you healthy year-round.</p>
+                    <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Pharmacy -->
+    <section class="trusted-pharmacy bg-light">
+        <div class="container trusted-container">
+            <div class="trusted-content">
+                <h2>Your Trusted<br>Pharmacy<br>for a <span class="text-primary">Healthier Life</span></h2>
+                <p>We provide expert advice, quality medications, and personalized care to support your journey to
+                    better health.</p>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-check text-primary"></i> Prescription & OTC Medicines</li>
+                    <li><i class="fa-solid fa-check text-primary"></i> Medication Therapy Management</li>
+                    <li><i class="fa-solid fa-check text-primary"></i> Health & Wellness Products</li>
+                    <li><i class="fa-solid fa-check text-primary"></i> Vaccination & Immunization</li>
+                </ul>
+            </div>
+            <div class="trusted-image">
+                <img src="assets/madichineimg.jpg" alt="Cart Illustration">
+            </div>
+            <div class="trusted-cards">
+                <div class="t-card">
+                    <div class="t-icon-box">
+                        <i class="fa-solid fa-award text-primary t-icon"></i>
+                    </div>
+                    <div>
+                        <h4>Quality You Can Trust</h4>
+                        <p>All medicines are 100% genuine and sourced from trusted brands.</p>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <div class="t-icon-box">
+                        <i class="fa-solid fa-user-nurse text-primary t-icon"></i>
+                    </div>
+                    <div>
+                        <h4>Expert Pharmacists</h4>
+                        <p>Our pharmacists are always here to guide you with care.</p>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <div class="t-icon-box">
+                        <i class="fa-solid fa-truck-fast text-primary t-icon"></i>
+                    </div>
+                    <div>
+                        <h4>Convenient & Reliable</h4>
+                        <p>Easy refills, quick service, and multiple ways to order your medicines.</p>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <div class="t-icon-box">
+                        <i class="fa-solid fa-hand-holding-dollar text-primary t-icon"></i>
+                    </div>
+                    <div>
+                        <h4>Affordable Healthcare</h4>
+                        <p>Best prices and exclusive discounts on all healthcare products.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get More From Your Medications -->
+    <section class="get-more">
+        <div class="container">
+            <div class="get-more-box">
+                <div class="gm-content">
+                    <h2>Get More From<br>Your <span class="text-primary">Medications</span></h2>
+                    <h4>Medication Therapy Management</h4>
+                    <p>Our dedicated pharmacists review your complete medication profile to ensure you are getting the
+                        most benefit while minimizing side effects. We provide comprehensive consultations to address
+                        your concerns and optimize your treatment plan.</p>
+                    <a href="#" class="btn btn-secondary">Learn About MTM</a>
+                </div>
+                <div class="gm-image">
+                    <img src="assets/pharmacy-1.jpg"
+                        alt="Pharmacist consulting patient">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <i class="fa-solid fa-shield-halved stat-icon"></i>
+                <div class="stat-text">
+                    <h3>75+</h3>
+                    <p>Years of<br>Experience</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-calendar-check stat-icon"></i>
+                <div class="stat-text">
+                    <h3>2012</h3>
+                    <p>Founded by<br>Professionals</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-user-doctor stat-icon"></i>
+                <div class="stat-text">
+                    <h3>5+</h3>
+                    <p>Pharmacists<br>on Staff</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-regular fa-face-smile stat-icon"></i>
+                <div class="stat-text">
+                    <h3>100%</h3>
+                    <p>Satisfied<br>Patients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Partner -->
+    <section class="trusted-partner">
+        <div class="container tp-container">
+            <div class="tp-content bg-blue">
+                <h2>Your Local Pharmacy.<br>Your Trusted Partner.</h2>
+                <p>At Ricker Pharmacy, we pride ourselves on being a cornerstone of the community. We are dedicated to
+                    providing excellent service, ensuring our patients receive the personalized care they deserve. From
+                    expert medication management to friendly advice, our knowledgeable staff is here to help you
+                    navigate your healthcare journey.</p>
+                <ul class="check-list light-text">
+                    <li><i class="fa-solid fa-check"></i> Quality Medications</li>
+                    <li><i class="fa-solid fa-check"></i> Experienced Pharmacists</li>
+                    <li><i class="fa-solid fa-check"></i> Personalized Health Solutions</li>
+                    <li><i class="fa-solid fa-check"></i> Community Pharmacy Services</li>
+                </ul>
+                <a href="#" class="btn btn-outline-light">Learn More About Us</a>
+            </div>
+            <div class="tp-image">
+                <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=600&q=80"
+                    alt="Pharmacist checking inventory">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section class="blogs section-padding">
+        <div class="container">
+            <h2 class="text-center" style="font-size: 36px; font-weight: 700; color: var(--primary-blue); margin-bottom: 40px;">Latest <span class="text-primary">News & Blogs</span></h2>
+            <div class="blogs-grid">
+                <!-- Blog 1 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=600&q=80" alt="Medicine Bottles">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <i class="fa-regular fa-calendar"></i> 10 May, 2024
+                        </div>
+                        <h4>Understanding Your Prescriptions</h4>
+                        <p>Learn how to manage your daily medications effectively and understand what your labels mean.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80" alt="Pharmacist filling prescription">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <i class="fa-regular fa-calendar"></i> 28 Apr, 2024
+                        </div>
+                        <h4>Medication Synchronization</h4>
+                        <p>Discover how aligning your refill dates can save you trips to the pharmacy and keep you on track.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80" alt="Vitamins and Supplements">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <i class="fa-regular fa-calendar"></i> 05 Apr, 2024
+                        </div>
+                        <h4>Vitamins vs. Supplements</h4>
+                        <p>A guide to choosing the right over-the-counter products to support your everyday immune health.</p>
+                        <a href="#" class="read-more">READ MORE <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Partner -->
+    <section class="health-partner">
+        <div class="container hp-container">
+            <div class="hp-content">
+                <h2>Your <span class="text-primary">Health</span> Partner,<br>Every Step of the Way</h2>
+                <p>From consultation to medication management, we are committed to being your reliable healthcare
+                    partner. We are here to support you.</p>
+                <a href="#" class="btn btn-secondary">Contact Us</a>
+            </div>
+            <div class="hp-image">
+                <img src="assets/richerpharma.jpg" 
+                    alt="Pharmacy Bag">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo light-logo">
+                    <img src="assets/download.png" alt="Ricker Pharmacy Logo">
+                </div>
+                <p>Your trusted local pharmacy committed to serving your health needs with compassion and care.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Compounding Services</h4>
+                <ul>
+                    <li><a href="#">Autologous Serum Drops</a></li>
+                    <li><a href="#">Hormone Replacement Therapy</a></li>
+                    <li><a href="#">Dental</a></li>
+                    <li><a href="#">Men's Health</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                    <li><a href="#">Sports Medicine</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="#">Prescription Compounding</a></li>
+                    <li><a href="#">Flu Shots and Immunizations</a></li>
+                    <li><a href="#">Adherence Packaging</a></li>
+                    <li><a href="#">Medication Synchronization</a></li>
+                    <li><a href="#">Medication Therapy Management</a></li>
+                    <li><a href="#">Health Screenings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Refill Prescriptions</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> <span>123 Healthway Street, Medical City, 12345</span></p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> <span>(555) 123-4567</span></p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> <span>rickerpharmacy@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ricker Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        let slideInterval;
+        const slides = document.querySelectorAll('.hero-slide');
+        const dots = document.querySelectorAll('.dot');
+        const slidesContainer = document.getElementById('heroSlides');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            dots.forEach(dot => dot.classList.remove('active'));
+            slides.forEach(slide => slide.classList.remove('active'));
+            
+            dots[slideIndex].classList.add('active');
+            slides[slideIndex].classList.add('active');
+        }
+
+        function moveSlide(n) {
+            slideIndex += n;
+            if (slideIndex >= totalSlides) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = totalSlides - 1;
+            updateCarousel();
+            resetInterval();
+        }
+
+        function currentSlide(n) {
+            slideIndex = n;
+            updateCarousel();
+            resetInterval();
+        }
+
+        function autoPlay() {
+            slideIndex++;
+            if (slideIndex >= totalSlides) slideIndex = 0;
+            updateCarousel();
+        }
+
+        function resetInterval() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(autoPlay, 5000);
+        }
+
+        // Start autoplay
+        resetInterval();
+    </script>
+</body>
+</html>
