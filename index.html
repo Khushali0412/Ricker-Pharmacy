@@ -26,7 +26,15 @@
             <a href="index.html" class="logo">
                 <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
             </a>
-            <nav class="nav">
+            <nav class="nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <a href="index.html" class="mobile-nav-logo">
+                        <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+                    </a>
+                    <button class="mobile-nav-close" id="mobileNavClose" onclick="closeMobileNav()" aria-label="Close Navigation">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
                 <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li class="has-dropdown">
@@ -37,9 +45,9 @@
                                     <ul>
                                         <li><a href="autologous-serum-drops.html"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum
                                                 Drops</a></li>
-                                        <li><a href="#"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a>
+                                        <li><a href="hormone-replacement-therapy.html"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a>
                                         </li>
-                                        <li><a href="#"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="dental.html"><i class="fa-solid fa-tooth"></i> Dental</a></li>
                                         <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
                                         <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
                                         <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a>
@@ -78,7 +86,7 @@
                                 <div class="mega-menu-promo bg-blue">
                                     <h4>Comprehensive Pharmacy Care</h4>
                                     <p>From immunizations to medication synchronization, we offer comprehensive services
-                                        to simplify your life.</p>
+                                         to simplify your life.</p>
                                     <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400"
                                         alt="Pharmacy Services">
                                 </div>
@@ -95,9 +103,19 @@
                             <li><a href="#">Tagalog</a></li>
                         </ul>
                     </li>
+                    <li class="mobile-nav-contact-item">
+                        <a href="contact.html" class="btn btn-primary mobile-nav-contact-btn">Contact Us</a>
+                    </li>
                 </ul>
             </nav>
-            <a href="#" class="btn btn-primary">Contact Us</a>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary header-btn">Contact Us</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -524,7 +542,7 @@
                 </a>
                 <p>Your trusted local pharmacy committed to serving your health needs with compassion and care.</p>
                 <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/people/Ricker-Pharmacy/100054351018151" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
@@ -534,16 +552,16 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="#">Peptide Therapy</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Compounding Services</h4>
                 <ul>
                     <li><a href="autologous-serum-drops.html">Autologous Serum Drops</a></li>
-                    <li><a href="#">Hormone Replacement Therapy</a></li>
-                    <li><a href="#">Dental</a></li>
+                    <li><a href="hormone-replacement-therapy.html">Hormone Replacement Therapy</a></li>
+                    <li><a href="dental.html">Dental</a></li>
                     <li><a href="#">Men's Health</a></li>
                     <li><a href="#">Pediatrics</a></li>
                     <li><a href="#">Sports Medicine</a></li>
@@ -566,7 +584,7 @@
                 <ul>
                     <li><a href="#">Refill Prescriptions</a></li>
                     <li><a href="#">HIPAA</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -625,6 +643,28 @@
 
         // Start autoplay
         resetInterval();
+
+        // Touch Swipe Support for Mobile Banner
+        if (slidesContainer) {
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            slidesContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            slidesContainer.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const swipeDiff = touchStartX - touchEndX;
+                if (Math.abs(swipeDiff) > 45) {
+                    if (swipeDiff > 0) {
+                        moveSlide(1); // Swipe left -> Next
+                    } else {
+                        moveSlide(-1); // Swipe right -> Prev
+                    }
+                }
+            }, { passive: true });
+        }
     </script>
     <script>
         document.querySelectorAll('.faq-question').forEach(button => {
@@ -653,5 +693,6 @@
             firstFaq.click();
         }
     </script>
+    <script src="mobile-nav.js"></script>
 </body>
 </html>

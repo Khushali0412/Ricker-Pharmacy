@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ricker Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="contact-page">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>Your Trusted Independent Pharmacy in Jacksonville, FL</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+            </a>
+            <nav class="nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <a href="index.html" class="mobile-nav-logo">
+                        <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+                    </a>
+                    <button class="mobile-nav-close" id="mobileNavClose" onclick="closeMobileNav()" aria-label="Close Navigation">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Compounding Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="autologous-serum-drops.html"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum Drops</a></li>
+                                        <li><a href="hormone-replacement-therapy.html"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a></li>
+                                        <li><a href="dental.html"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> IM Shots</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Custom Care for You</h4>
+                                    <p>Discover personalized compounding solutions tailored to your unique needs.</p>
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Compounding">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Other Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-mortar-pestle"></i> Prescription Compounding</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> Flu Shots and Immunizations</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-box"></i> Adherence Packaging</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rotate"></i> Medication Synchronization</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-stethoscope"></i> Medication Therapy Management Services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health Screenings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Comprehensive Pharmacy Care</h4>
+                                    <p>From immunizations to medication synchronization, we offer comprehensive services to simplify your life.</p>
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Services">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <ul class="simple-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-contact-item">
+                        <a href="contact.html" class="btn btn-primary mobile-nav-contact-btn active">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary header-btn active">Contact Us</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="contact-page">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <h1>Contact Us</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info Section (Matches Reference Design) -->
+        <section class="contact-main-section">
+            <!-- Left Background Strip with pattern.png overlay -->
+            <div class="contact-left-bg">
+                <div class="contact-pattern-overlay"></div>
+            </div>
+
+            <div class="container contact-main-container">
+                <!-- Left Overlapping Card: Get In Touch With Us -->
+                <div class="contact-info-card">
+                    <h3 class="contact-card-title">Get In Touch With Us</h3>
+                    <p class="contact-card-desc">
+                        Your trusted local pharmacy committed to serving your health needs with compassion and care. Have questions about our compounding services or prescription transfers? Reach out to us today.
+                    </p>
+
+                    <div class="contact-details-list">
+                        <!-- Address -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Address</h4>
+                                <p>123 Healthway Street, Medical City, 12345</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Phone</h4>
+                                <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="contact-detail-item">
+                            <div class="contact-icon-box">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <h4>Email</h4>
+                                <p><a href="mailto:rickerpharmacy@gmail.com">rickerpharmacy@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form: We'd Love To Hear From You -->
+                <div class="contact-form-wrapper">
+                    <h2 class="contact-form-title">We'd Love To Hear From You</h2>
+                    <p class="contact-form-subtitle">
+                        Whether you need personalized compounding solutions, prescription refills, or expert pharmacist consultations, our dedicated clinical team is here for you.
+                    </p>
+
+                    <form class="contact-form" id="pharmacyContactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccessMsg').style.display='block'; this.reset();">
+                        <div class="contact-form-row">
+                            <div class="contact-input-group">
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                            </div>
+                            <div class="contact-input-group">
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-row">
+                            <div class="contact-input-group">
+                                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                            </div>
+                            <div class="contact-input-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class="contact-input-group full-width">
+                            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+
+                        <div class="contact-submit-row">
+                            <button type="submit" class="contact-submit-btn">Send Message</button>
+                        </div>
+
+                        <!-- Success Feedback Message -->
+                        <div id="formSuccessMsg" class="contact-success-alert" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>Thank you! Your message has been sent successfully. A Ricker Pharmacy team member will get back to you shortly.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location & Map Section -->
+        <section class="contact-map-section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Visit Our <span class="text-primary">Pharmacy</span></h2>
+                    <p class="section-subtitle">Conveniently located with dedicated patient parking and on-site clinical consultation rooms.</p>
+                </div>
+                <div class="contact-map-card">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110052.28581427514!2d-81.74868994784407!3d30.327572719232386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e5b716f1ceafeb%3A0xc3d6e3013e964091!2sJacksonville%2C%20FL!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="380" 
+                        style="border:0; border-radius: 18px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ricker Pharmacy Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo light-logo">
+                    <img src="assets/download.png" alt="Ricker Pharmacy Logo">
+                </a>
+                <p>Your trusted local pharmacy committed to serving your health needs with compassion and care.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Ricker-Pharmacy/100054351018151" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Compounding Services</h4>
+                <ul>
+                    <li><a href="autologous-serum-drops.html">Autologous Serum Drops</a></li>
+                    <li><a href="hormone-replacement-therapy.html">Hormone Replacement Therapy</a></li>
+                    <li><a href="dental.html">Dental</a></li>
+                    <li><a href="#">Men's Health</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                    <li><a href="#">Sports Medicine</a></li>
+                    <li><a href="#">IM Shots</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="#">Prescription Compounding</a></li>
+                    <li><a href="#">Flu Shots and Immunizations</a></li>
+                    <li><a href="#">Adherence Packaging</a></li>
+                    <li><a href="#">Medication Synchronization</a></li>
+                    <li><a href="#">Medication Therapy Management</a></li>
+                    <li><a href="#">Health Screenings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Refill Prescriptions</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> <span>123 Healthway Street, Medical City, 12345</span></p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> <span>(555) 123-4567</span></p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> <span>rickerpharmacy@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ricker Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="mobile-nav.js"></script>
+</body>
+</html>

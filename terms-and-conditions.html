@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Ricker Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="terms-page">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <p>Your Trusted Independent Pharmacy in Jacksonville, FL</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+            </a>
+            <nav class="nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <a href="index.html" class="mobile-nav-logo">
+                        <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+                    </a>
+                    <button class="mobile-nav-close" id="mobileNavClose" onclick="closeMobileNav()" aria-label="Close Navigation">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Compounding Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="autologous-serum-drops.html"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum Drops</a></li>
+                                        <li><a href="hormone-replacement-therapy.html"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a></li>
+                                        <li><a href="dental.html"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> IM Shots</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Custom Care for You</h4>
+                                    <p>Discover personalized compounding solutions tailored to your unique needs.</p>
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Compounding">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Other Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-mortar-pestle"></i> Prescription Compounding</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> Flu Shots and Immunizations</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-box"></i> Adherence Packaging</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rotate"></i> Medication Synchronization</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-stethoscope"></i> Medication Therapy Management Services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health Screenings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Comprehensive Pharmacy Care</h4>
+                                    <p>From immunizations to medication synchronization, we offer comprehensive services to simplify your life.</p>
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Services">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <ul class="simple-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-contact-item">
+                        <a href="contact.html" class="btn btn-primary mobile-nav-contact-btn">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary header-btn">Contact Us</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="terms-page">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <h1>Terms & Conditions</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <span>Terms & Conditions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Terms Content Section -->
+        <section class="terms-section">
+            <div class="container">
+                <div class="terms-layout">
+                    <!-- Sticky Sidebar Navigation -->
+                    <aside class="terms-sidebar">
+                        <div class="terms-toc-card">
+                            <div class="terms-toc-header">
+                                <div class="terms-toc-icon">
+                                    <i class="fa-solid fa-list-check"></i>
+                                </div>
+                                <div>
+                                    <h3>Table of Contents</h3>
+                                    <span class="terms-toc-subtitle">Quick Section Jump</span>
+                                </div>
+                            </div>
+
+                            <ul class="terms-toc-list" id="termsTocList">
+                                <li>
+                                    <a href="#introduction" class="active">
+                                        <i class="fa-solid fa-file-contract"></i>
+                                        <span>1. Introduction & Acceptance</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#cookies">
+                                        <i class="fa-solid fa-cookie-bite"></i>
+                                        <span>2. Cookies & Tracking</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#license">
+                                        <i class="fa-solid fa-scale-balanced"></i>
+                                        <span>3. Intellectual Property</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#user-comments">
+                                        <i class="fa-solid fa-comments"></i>
+                                        <span>4. User Comments & Feedback</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#hyperlinking">
+                                        <i class="fa-solid fa-link"></i>
+                                        <span>5. Hyperlinking Policy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#iframes">
+                                        <i class="fa-solid fa-desktop"></i>
+                                        <span>6. iFrames & Embedding</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#medical-disclaimer">
+                                        <i class="fa-solid fa-triangle-exclamation"></i>
+                                        <span>7. Medical Disclaimer</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services-terms">
+                                        <i class="fa-solid fa-mortar-pestle"></i>
+                                        <span>8. Compounding Services</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#reservation">
+                                        <i class="fa-solid fa-gavel"></i>
+                                        <span>9. Reservation of Rights</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#liability">
+                                        <i class="fa-solid fa-shield-cat"></i>
+                                        <span>10. Limitation of Liability</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact-info">
+                                        <i class="fa-solid fa-headset"></i>
+                                        <span>11. Contact & Legal</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- Live Pharmacist Help Card -->
+                            <div class="terms-help-card">
+                                <h4>Have Questions?</h4>
+                                <p>Our clinical staff is happy to clarify any terms, prescriptions, or patient rights.</p>
+                                <a href="tel:5551234567" class="btn ased-glass-btn terms-call-btn">
+                                    <i class="fa-solid fa-phone"></i> (555) 123-4567
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Main Terms Body -->
+                    <article class="terms-content">
+                        <!-- Quick Search Filter -->
+                        <div class="terms-search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="termsSearchInput" placeholder="Filter terms by keyword (e.g., compounding, disclaimer, cookies, refunds)..." autocomplete="off">
+                            <button type="button" id="clearSearchBtn" class="terms-clear-btn" style="display: none;">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+
+                        <!-- Intro Card -->
+                        <div class="terms-intro-card">
+                            <div class="terms-card-topbar">
+                                <div class="terms-badge">
+                                    <i class="fa-solid fa-certificate"></i> Binding Legal Agreement
+                                </div>
+                                <span class="terms-version-tag">Version 2.4</span>
+                            </div>
+                            <h2 class="section-title">Terms and <span class="text-primary">Conditions</span></h2>
+                            <p class="terms-lead">
+                                Welcome to Ricker Pharmacy. These Terms and Conditions constitute a legally binding agreement between you and Ricker Pharmacy regarding your access to and use of our website, on-site services, and custom compounding therapies. By accessing this website or engaging our services, you confirm that you have read, understood, and agreed to all provisions outlined herein.
+                            </p>
+                            <div class="terms-summary-banner">
+                                <div class="terms-summary-icon">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </div>
+                                <div class="terms-summary-text">
+                                    <strong>Summary of Core Principles:</strong> All content is provided for informational and educational purposes only. Compounded medications require a valid prescription and are prepared in strict compliance with USP standards.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1. Introduction -->
+                        <div class="terms-block" id="introduction" data-keywords="introduction acceptance terms agreement client company parties florida law">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">01</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Introduction & Acceptance of Agreement</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-circle-check"></i> Standard Terms</span>
+                                </div>
+                            </div>
+                            <p>
+                                The following terminology applies to these Terms and Conditions, Privacy Statement, and Disclaimer Notice, and all Agreements: "Client", "You", and "Your" refers to you, the person who logs onto this website and complies with the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our", and "Us", refers to Ricker Pharmacy. "Party", "Parties", or "Us", refers to both the Client and ourselves.
+                            </p>
+                            <p>
+                                All terms refer to the offer, acceptance, and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s healthcare and compounding needs, in accordance with and subject to the prevailing laws of the State of Florida and applicable United States Federal healthcare statutes.
+                            </p>
+                        </div>
+
+                        <!-- 2. Cookies -->
+                        <div class="terms-block" id="cookies" data-keywords="cookies tracking privacy data preferences analytics sessions">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">02</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Cookies & Tracking Technologies</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-cookie-bite"></i> Data & Privacy</span>
+                                </div>
+                            </div>
+                            <p>
+                                We employ the use of cookies to enhance your browsing experience. By accessing Ricker Pharmacy, you agree to the use of cookies in accordance with Ricker Pharmacy's Privacy Policy and data protection standards.
+                            </p>
+                            <p>
+                                Interactive features of our website use cookies to retrieve user session details for each visit, remember user language preferences, and facilitate smooth prescription refilling and appointment scheduling. Some of our trusted affiliate or analytics partners may also utilize cookies to help us evaluate site performance.
+                            </p>
+                        </div>
+
+                        <!-- 3. Intellectual Property -->
+                        <div class="terms-block" id="license" data-keywords="intellectual property license copyright trademark proprietary formulation">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">03</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>License & Intellectual Property Rights</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-lock"></i> Proprietary Assets</span>
+                                </div>
+                            </div>
+                            <p>
+                                Unless otherwise explicitly stated, Ricker Pharmacy and/or its licensors own all intellectual property rights for all material, formulation guides, clinical descriptions, graphics, and trademarks published on Ricker Pharmacy. All intellectual property rights are reserved.
+                            </p>
+                            <div class="terms-highlight-box">
+                                <h4><i class="fa-solid fa-ban"></i> Express Restrictions: You Must Not:</h4>
+                                <ul class="terms-styled-checklist">
+                                    <li><i class="fa-solid fa-xmark text-danger"></i> Republish, duplicate, or sell material or images from Ricker Pharmacy.</li>
+                                    <li><i class="fa-solid fa-xmark text-danger"></i> Sell, rent, or sub-license proprietary pharmaceutical protocols or content.</li>
+                                    <li><i class="fa-solid fa-xmark text-danger"></i> Reproduce, duplicate, or scrape autologous serum or compounding articles for commercial use.</li>
+                                    <li><i class="fa-solid fa-xmark text-danger"></i> Redistribute content from Ricker Pharmacy without prior express written authorization.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 4. User Comments -->
+                        <div class="terms-block" id="user-comments" data-keywords="user comments feedback reviews interactive submissions moderation">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">04</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>User Comments & Interactive Submissions</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-comments"></i> Community Standards</span>
+                                </div>
+                            </div>
+                            <p>
+                                Certain areas of this website may provide opportunities for users to submit reviews, inquiries, or feedback. Ricker Pharmacy does not pre-screen, edit, or endorse user-submitted comments before they appear on the site. Comments reflect solely the opinions of the individual author.
+                            </p>
+                            <p>
+                                To the maximum extent permitted by applicable laws, Ricker Pharmacy shall not be liable for any user-generated comments or any damages or liabilities arising from the publication of comments. Ricker Pharmacy reserves the absolute right to monitor and remove any comments deemed inappropriate, offensive, defamatory, or in breach of these Terms.
+                            </p>
+                        </div>
+
+                        <!-- 5. Hyperlinking -->
+                        <div class="terms-block" id="hyperlinking" data-keywords="hyperlinking links backlink approval third party organizations">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">05</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Hyperlinking to our Content</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-link"></i> Linking Guidelines</span>
+                                </div>
+                            </div>
+                            <p>
+                                The following accredited organizations may link to our Website without prior written approval:
+                            </p>
+                            <ul class="terms-styled-checklist">
+                                <li><i class="fa-solid fa-circle-check"></i> Government health agencies and state boards of pharmacy;</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Verified medical search engines and established healthcare directories;</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Accredited ophthalmology and medical academic institutions;</li>
+                                <li><i class="fa-solid fa-circle-check"></i> Verified healthcare news organizations and peer-reviewed journals.</li>
+                            </ul>
+                            <p>
+                                No use of Ricker Pharmacy's logo or branded artwork is allowed for linking without an executed trademark license agreement.
+                            </p>
+                        </div>
+
+                        <!-- 6. iFrames -->
+                        <div class="terms-block" id="iframes" data-keywords="iframes frames embedding layout visual presentation">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">06</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>iFrames & Visual Presentation</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-desktop"></i> Integrity</span>
+                                </div>
+                            </div>
+                            <p>
+                                Without prior express written permission, you may not create frames around our Webpages or utilize framing techniques that alter in any manner the visual presentation, branding, or appearance of our Website.
+                            </p>
+                        </div>
+
+                        <!-- 7. Medical Disclaimer -->
+                        <div class="terms-block" id="medical-disclaimer" data-keywords="medical disclaimer emergency physician advice diagnosis treatment healthcare warning">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge warning">
+                                    <span class="terms-num"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Medical & Health Information Disclaimer</h3>
+                                    <span class="terms-takeaway-chip warning"><i class="fa-solid fa-stethoscope"></i> Crucial Health Notice</span>
+                                </div>
+                            </div>
+                            
+                            <div class="terms-alert-card">
+                                <div class="terms-alert-icon">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+                                </div>
+                                <div class="terms-alert-text">
+                                    <h4>Important Healthcare & Clinical Notice</h4>
+                                    <p>
+                                        The information provided on this website—including articles on Autologous Serum Eye Drops (ASEDs), Peptide Therapies, and Hormone Replacement Therapies—is published strictly for educational and informational purposes. It is not intended as medical advice, diagnosis, or treatment.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p>
+                                Always consult your optometrist, ophthalmologist, physician, or qualified medical practitioner regarding any health questions or symptoms. Never disregard professional medical advice or delay seeking medical evaluation because of information read on this Website. If you are experiencing a medical emergency, call 911 immediately.
+                            </p>
+                        </div>
+
+                        <!-- 8. Pharmacy Services -->
+                        <div class="terms-block" id="services-terms" data-keywords="compounding prescription services autologous serum drops refund policy return storage">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">08</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Compounding, Prescription & Clinical Services</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-prescription"></i> Rx Guidelines</span>
+                                </div>
+                            </div>
+                            <p>
+                                All prescription compounding services, including Autologous Serum Eye Drops (ASEDs) and specialized hormone preparations, require an authorized prescription from a licensed practitioner.
+                            </p>
+                            <div class="terms-highlight-box blue-accent">
+                                <h4><i class="fa-solid fa-box-archive"></i> Custom Formulation & Refund Policy:</h4>
+                                <p>
+                                    Custom-compounded medications are prepared specifically for each patient in compliance with Florida Board of Pharmacy regulations and USP &lt;797&gt; / &lt;795&gt; sterile standards. Due to the biological and sterile nature of custom preparations, dispensed custom medications cannot be returned, exchanged, or refunded once formulated.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 9. Reservation of Rights -->
+                        <div class="terms-block" id="reservation" data-keywords="reservation rights link removal modifications policy updates">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">09</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Reservation of Rights & Removal of Links</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-gavel"></i> Legal Discretion</span>
+                                </div>
+                            </div>
+                            <p>
+                                We reserve the right to request the immediate removal of any link or reference to our Website. You agree to immediately remove all requested links upon notice. We also reserve the right to update these Terms and Conditions at any time. By continuing to use or link to our Website, you agree to be bound by the updated terms.
+                            </p>
+                        </div>
+
+                        <!-- 10. Limitation of Liability -->
+                        <div class="terms-block" id="liability" data-keywords="limitation liability warranty disclaimer damages warranties">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">10</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Disclaimer of Warranties & Limitation of Liability</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-shield-halved"></i> Liability Limits</span>
+                                </div>
+                            </div>
+                            <p>
+                                To the maximum extent permitted by applicable law, Ricker Pharmacy excludes all representations and warranties relating to our website and the use of this website. Nothing in this disclaimer will:
+                            </p>
+                            <ul class="terms-styled-checklist">
+                                <li><i class="fa-solid fa-check text-primary"></i> Limit or exclude liability for death or personal injury resulting from negligence;</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Limit or exclude liability for fraud or fraudulent misrepresentation;</li>
+                                <li><i class="fa-solid fa-check text-primary"></i> Limit any liabilities in any way not permitted under applicable Florida or Federal law.</li>
+                            </ul>
+                            <p>
+                                As long as the website and the informational content on the website are provided free of charge, Ricker Pharmacy will not be liable for any loss or damage of any nature.
+                            </p>
+                        </div>
+
+                        <!-- 11. Contact Info -->
+                        <div class="terms-block" id="contact-info" data-keywords="governing law florida contact legal address phone email hours">
+                            <div class="terms-block-header">
+                                <div class="terms-num-badge">
+                                    <span class="terms-num">11</span>
+                                </div>
+                                <div class="terms-block-title-wrap">
+                                    <h3>Governing Law & Contact Information</h3>
+                                    <span class="terms-takeaway-chip"><i class="fa-solid fa-scale-balanced"></i> Florida Jurisdiction</span>
+                                </div>
+                            </div>
+                            <p>
+                                These Terms & Conditions are governed by and construed in accordance with the laws of the State of Florida, United States, without regard to conflict of law provisions.
+                            </p>
+                            <div class="terms-contact-card">
+                                <div class="terms-contact-header">
+                                    <div class="terms-contact-icon">
+                                        <i class="fa-solid fa-building-columns"></i>
+                                    </div>
+                                    <div>
+                                        <h4>Ricker Pharmacy Legal & Compliance Department</h4>
+                                        <span>Direct Inquiries & Regulatory Correspondence</span>
+                                    </div>
+                                </div>
+                                <div class="terms-contact-grid">
+                                    <div class="terms-contact-item">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <div>
+                                            <strong>Address:</strong>
+                                            <span>123 Healthway Street, Medical City, 12345</span>
+                                        </div>
+                                    </div>
+                                    <div class="terms-contact-item">
+                                        <i class="fa-solid fa-phone"></i>
+                                        <div>
+                                            <strong>Phone:</strong>
+                                            <span>(555) 123-4567</span>
+                                        </div>
+                                    </div>
+                                    <div class="terms-contact-item">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        <div>
+                                            <strong>Email:</strong>
+                                            <span>rickerpharmacy@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="terms-contact-item">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <div>
+                                            <strong>Hours:</strong>
+                                            <span>Mon – Fri: 9:00 AM – 6:00 PM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo light-logo">
+                    <img src="assets/download.png" alt="Ricker Pharmacy Logo">
+                </a>
+                <p>Your trusted local pharmacy committed to serving your health needs with compassion and care.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Ricker-Pharmacy/100054351018151" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Compounding Services</h4>
+                <ul>
+                    <li><a href="autologous-serum-drops.html">Autologous Serum Drops</a></li>
+                    <li><a href="hormone-replacement-therapy.html">Hormone Replacement Therapy</a></li>
+                    <li><a href="dental.html">Dental</a></li>
+                    <li><a href="#">Men's Health</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                    <li><a href="#">Sports Medicine</a></li>
+                    <li><a href="#">IM Shots</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="#">Prescription Compounding</a></li>
+                    <li><a href="#">Flu Shots and Immunizations</a></li>
+                    <li><a href="#">Adherence Packaging</a></li>
+                    <li><a href="#">Medication Synchronization</a></li>
+                    <li><a href="#">Medication Therapy Management</a></li>
+                    <li><a href="#">Health Screenings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Refill Prescriptions</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> <span>123 Healthway Street, Medical City, 12345</span></p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> <span>(555) 123-4567</span></p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> <span>rickerpharmacy@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ricker Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Script: Table of Contents Spy, Live Keyword Filter -->
+    <script>
+        // Intersection Observer for Active TOC Highlighting & Auto Scroll
+        const tocListContainer = document.getElementById('termsTocList');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                const id = entry.target.getAttribute('id');
+                const link = document.querySelector(`.terms-toc-list a[href="#${id}"]`);
+                if (link && entry.isIntersecting) {
+                    document.querySelectorAll('.terms-toc-list a').forEach(a => a.classList.remove('active'));
+                    link.classList.add('active');
+
+                    // Auto-scroll the left sidebar menu to keep active link centered/in view
+                    if (tocListContainer) {
+                        const linkOffsetTop = link.offsetTop;
+                        const containerHeight = tocListContainer.clientHeight;
+                        const linkHeight = link.clientHeight;
+                        
+                        tocListContainer.scrollTo({
+                            top: linkOffsetTop - (containerHeight / 2) + (linkHeight / 2),
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        }, { rootMargin: '-15% 0px -65% 0px' });
+
+        document.querySelectorAll('.terms-block').forEach(block => {
+            observer.observe(block);
+        });
+
+        // Live Keyword Filter
+        const searchInput = document.getElementById('termsSearchInput');
+        const clearBtn = document.getElementById('clearSearchBtn');
+        const termsBlocks = document.querySelectorAll('.terms-block');
+
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                clearBtn.style.display = query.length > 0 ? 'inline-flex' : 'none';
+
+                termsBlocks.forEach(block => {
+                    const text = block.innerText.toLowerCase();
+                    const keywords = block.getAttribute('data-keywords') || '';
+                    if (!query || text.includes(query) || keywords.includes(query)) {
+                        block.style.display = 'block';
+                    } else {
+                        block.style.display = 'none';
+                    }
+                });
+            });
+
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                clearBtn.style.display = 'none';
+                termsBlocks.forEach(block => block.style.display = 'block');
+                searchInput.focus();
+            });
+        }
+    </script>
+    <script src="mobile-nav.js"></script>
+</body>
+</html>

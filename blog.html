@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read health, wellness, and pharmaceutical insights from the licensed pharmacists at Ricker Pharmacy. Learn about compounding, autologous serum drops, immunizations, and personalized care.">
+    <title>Health & Wellness Blog | Ricker Pharmacy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="blog-page">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container text-center">
+            <p>Prescriptions filled in 15 minutes or less! Call today: (555) 123-4567</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+            </a>
+            <nav class="nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <a href="index.html" class="mobile-nav-logo">
+                        <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+                    </a>
+                    <button class="mobile-nav-close" id="mobileNavClose" onclick="closeMobileNav()" aria-label="Close Navigation">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Compounding Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="autologous-serum-drops.html"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum Drops</a></li>
+                                        <li><a href="hormone-replacement-therapy.html"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a></li>
+                                        <li><a href="dental.html"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> IM Shots</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Custom Care for You</h4>
+                                    <p>Discover personalized compounding solutions tailored to your unique needs.</p>
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Compounding">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Other Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-mortar-pestle"></i> Prescription Compounding</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> Flu Shots and Immunizations</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-box"></i> Adherence Packaging</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rotate"></i> Medication Synchronization</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-stethoscope"></i> Medication Therapy Management Services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health Screenings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Comprehensive Pharmacy Care</h4>
+                                    <p>From immunizations to medication synchronization, we offer comprehensive services to simplify your life.</p>
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Services">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <ul class="simple-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-contact-item">
+                        <a href="contact.html" class="btn btn-primary mobile-nav-contact-btn">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary header-btn">Contact Us</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="blog-page">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <h1>Blog</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <span>Blog</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Controls & Filter Bar -->
+        <section class="blog-controls-section">
+            <div class="container">
+                <div class="blog-controls-wrapper">
+                    <!-- Search Input -->
+                    <div class="blog-search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="blogSearchInput" placeholder="Search health topics, compounding, eye care..." aria-label="Search blog posts">
+                        <button class="blog-search-clear" id="blogSearchClear" aria-label="Clear search" style="display: none;">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <!-- Category Filter Pills -->
+                    <div class="blog-filter-pills" id="blogFilterPills">
+                        <button class="filter-pill active" data-category="all">All Articles (10)</button>
+                        <button class="filter-pill" data-category="compounding">Compounding Care</button>
+                        <button class="filter-pill" data-category="eye-health">Eye Care & ASED</button>
+                        <button class="filter-pill" data-category="med-management">Medication Therapy</button>
+                        <button class="filter-pill" data-category="wellness">Wellness & Family</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Listing Grid Section -->
+        <section class="blog-listing-section">
+            <div class="container">
+                <div class="blog-grid" id="blogGrid">
+
+                    <!-- Post 1: Eye Care / ASED -->
+                    <article class="blog-card" data-category="eye-health" data-keywords="autologous serum eye drops ased dry eyes cornea tears ophthalmology">
+                        <div class="blog-card-thumb">
+                            <img src="assets/pharmacy-shelves.jpg" alt="Autologous Serum Eye Drops Preparation">
+                            <span class="blog-card-badge badge-green"><i class="fa-solid fa-eye-dropper"></i> Eye Health</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 5 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Oct 14, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="blog-detail.html">Understanding Autologous Serum Eye Drops (ASED) for Dry Eyes</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Personalized drops made from your blood serum provide natural growth factors to soothe and heal severe dry eyes.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>TJ Patel, RPh</strong>
+                                        <span>Clinical Pharmacist</span>
+                                    </div>
+                                </div>
+                                <a href="blog-detail.html" class="blog-read-btn" aria-label="Read about ASED drops"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 2: Compounding / BHRT -->
+                    <article class="blog-card" data-category="compounding" data-keywords="hormone replacement therapy bhrt bioidentical compounding estrogen progesterone testosterone">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=600" alt="Hormone Replacement Compounding">
+                            <span class="blog-card-badge badge-blue"><i class="fa-solid fa-vial"></i> Compounding</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 6 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Oct 02, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Customized Hormone Replacement Therapy (BHRT)</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Custom bio-identical dosing and specialized forms designed to naturally restore hormonal balance and energy.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Shawn Nelson, PharmD</strong>
+                                        <span>Compounding Specialist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about BHRT"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 3: Compounding Overview -->
+                    <article class="blog-card" data-category="compounding" data-keywords="custom compounding personalized medicine allergies dosage forms liquids capsules">
+                        <div class="blog-card-thumb">
+                            <img src="assets/medical-supplies.jpg" alt="Prescription Compounding Lab">
+                            <span class="blog-card-badge badge-green"><i class="fa-solid fa-mortar-pestle"></i> Compounding</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 4 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Sep 24, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Why Prescription Compounding Is Personalized Medicine</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Custom strengths, allergen-free bases, and tailored forms solve patient challenges commercial drugs can't.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Mitesh Patel, RPh</strong>
+                                        <span>Senior Pharmacist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about compounding benefits"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 4: Medication Management -->
+                    <article class="blog-card" data-category="med-management" data-keywords="medication synchronization sync adherence refill bubble pack packaging">
+                        <div class="blog-card-thumb">
+                            <img src="assets/full-blister-packs.jpg" alt="Adherence Packaging and Medication Synchronization">
+                            <span class="blog-card-badge badge-blue"><i class="fa-solid fa-rotate"></i> Med-Sync</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 4 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Sep 15, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Medication Synchronization: Simplify Your Daily Health Routine</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Align all your prescription refills to a single monthly pickup date with organized blister packaging.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Lourdes Middleton</strong>
+                                        <span>Pharmacy Tech</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about Med Sync"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 5: Wellness / Immunizations -->
+                    <article class="blog-card" data-category="wellness" data-keywords="flu shots vaccines immunizations shingles pneumonia covid travel health">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&q=80&w=600" alt="Immunizations and Flu Shots">
+                            <span class="blog-card-badge badge-green"><i class="fa-solid fa-syringe"></i> Immunizations</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 5 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Sep 04, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Flu Season Defense & Essential Vaccines for Families</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Stay protected with quick walk-in flu, shingles, and pneumonia vaccines with zero wait time.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>TJ Patel, RPh</strong>
+                                        <span>Clinical Pharmacist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about immunizations"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 6: Compounding / Pediatrics -->
+                    <article class="blog-card" data-category="compounding" data-keywords="pediatric compounding children liquid flavors dye free allergy sensitive">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=600" alt="Pediatric Pharmacy Compounding">
+                            <span class="blog-card-badge badge-blue"><i class="fa-solid fa-baby"></i> Pediatrics</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 4 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Aug 28, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Pediatric Compounding: Kid-Friendly & Stress-Free Meds</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Custom weight-based liquids with kid-favorite flavors like bubblegum, strawberry, and grape.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Shawn Nelson, PharmD</strong>
+                                        <span>Compounding Specialist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about pediatric compounding"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 7: Wellness / Veterinary Compounding -->
+                    <article class="blog-card" data-category="wellness" data-keywords="pet compounding veterinary cats dogs flavored treats tuna beef chewables">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&q=80&w=600" alt="Veterinary Compounding for Pets">
+                            <span class="blog-card-badge badge-green"><i class="fa-solid fa-paw"></i> Pet Care</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 5 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Aug 16, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Veterinary Compounding: Custom Meds & Treats for Pets</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Flavored treats, tuna liquids, and transdermal ear gels to make pet medication stress-free.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Mitesh Patel, RPh</strong>
+                                        <span>Senior Pharmacist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about pet compounding"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 8: Compounding / Sports Medicine -->
+                    <article class="blog-card" data-category="compounding" data-keywords="sports medicine pain topical creams inflammation recovery athletes">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=600" alt="Sports Medicine Compounding">
+                            <span class="blog-card-badge badge-blue"><i class="fa-solid fa-person-running"></i> Sports Medicine</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 4 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Aug 05, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Sports Medicine: Targeted Relief for Active Lifestyles</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Targeted transdermal anti-inflammatory creams providing direct relief to sore joints and muscles.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Jose L Hernandez</strong>
+                                        <span>Pharmacy Tech</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about sports compounding"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 9: Medication Therapy Management -->
+                    <article class="blog-card" data-category="med-management" data-keywords="medication therapy management mtm drug interactions safety clinical review">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=600" alt="Medication Therapy Consultation">
+                            <span class="blog-card-badge badge-green"><i class="fa-solid fa-stethoscope"></i> Clinical Care</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 6 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Jul 22, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">Medication Therapy Management: Preventing Drug Conflicts</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Comprehensive review to optimize dosing, prevent drug interactions, and reduce healthcare costs.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>TJ Patel, RPh</strong>
+                                        <span>Clinical Pharmacist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about MTM reviews"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 10: Advanced Therapies / Peptide Therapy -->
+                    <article class="blog-card" data-category="wellness" data-keywords="peptide therapy bpc-157 semaglutide anti-aging cellular repair vitality">
+                        <div class="blog-card-thumb">
+                            <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=600" alt="Peptide Therapy Research">
+                            <span class="blog-card-badge badge-blue"><i class="fa-solid fa-dna"></i> Peptide Therapy</span>
+                            <span class="blog-read-time-tag"><i class="fa-regular fa-clock"></i> 5 min</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-card-meta">
+                                <span><i class="fa-regular fa-calendar-days"></i> Jul 10, 2026</span>
+                            </div>
+                            <h3 class="blog-card-title">
+                                <a href="#">The Science of Peptide Therapy: Cellular Rejuvenation</a>
+                            </h3>
+                            <p class="blog-card-excerpt">
+                                Explore how specialized amino acid peptides support tissue repair, cellular vitality, and immune vigor.
+                            </p>
+                            <div class="blog-card-footer">
+                                <div class="blog-author">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-info">
+                                        <strong>Shawn Nelson, PharmD</strong>
+                                        <span>Compounding Specialist</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="blog-read-btn" aria-label="Read about peptide therapy"><span>Read</span> <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- No Results State -->
+                <div class="blog-no-results" id="blogNoResults" style="display: none;">
+                    <div class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <h3>No matching articles found</h3>
+                    <p>Try searching for different keywords such as <em>compounding</em>, <em>dry eyes</em>, <em>immunizations</em>, or select "All Articles".</p>
+                    <button class="btn btn-primary" onclick="resetBlogFilters()">View All Articles</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo light-logo">
+                    <img src="assets/download.png" alt="Ricker Pharmacy Logo">
+                </a>
+                <p>Your trusted local pharmacy committed to serving your health needs with compassion and care.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Ricker-Pharmacy/100054351018151" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Compounding Services</h4>
+                <ul>
+                    <li><a href="autologous-serum-drops.html">Autologous Serum Drops</a></li>
+                    <li><a href="hormone-replacement-therapy.html">Hormone Replacement Therapy</a></li>
+                    <li><a href="dental.html">Dental</a></li>
+                    <li><a href="#">Men's Health</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                    <li><a href="#">Sports Medicine</a></li>
+                    <li><a href="#">IM Shots</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="#">Prescription Compounding</a></li>
+                    <li><a href="#">Flu Shots and Immunizations</a></li>
+                    <li><a href="#">Adherence Packaging</a></li>
+                    <li><a href="#">Medication Synchronization</a></li>
+                    <li><a href="#">Medication Therapy Management</a></li>
+                    <li><a href="#">Health Screenings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Refill Prescriptions</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> <span>123 Healthway Street, Medical City, 12345</span></p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> <span>(555) 123-4567</span></p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> <span>rickerpharmacy@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ricker Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Filter & Search Script -->
+    <script>
+        const searchInput = document.getElementById('blogSearchInput');
+        const clearBtn = document.getElementById('blogSearchClear');
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const blogCards = document.querySelectorAll('.blog-card');
+        const noResults = document.getElementById('blogNoResults');
+        let currentCategory = 'all';
+
+        function filterArticles() {
+            const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
+            if (clearBtn) clearBtn.style.display = query.length > 0 ? 'inline-flex' : 'none';
+
+            let visibleCount = 0;
+
+            blogCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const title = card.querySelector('.blog-card-title').innerText.toLowerCase();
+                const excerpt = card.querySelector('.blog-card-excerpt').innerText.toLowerCase();
+                const keywords = (card.getAttribute('data-keywords') || '').toLowerCase();
+                
+                const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+                const matchesSearch = (!query || title.includes(query) || excerpt.includes(query) || keywords.includes(query));
+
+                if (matchesCategory && matchesSearch) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (noResults) {
+                noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+            }
+        }
+
+        if (filterPills) {
+            filterPills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    filterPills.forEach(p => p.classList.remove('active'));
+                    pill.classList.add('active');
+                    currentCategory = pill.getAttribute('data-category');
+                    filterArticles();
+                });
+            });
+        }
+
+        if (searchInput) {
+            searchInput.addEventListener('input', filterArticles);
+        }
+
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                filterArticles();
+                searchInput.focus();
+            });
+        }
+
+        function resetBlogFilters() {
+            if (searchInput) searchInput.value = '';
+            currentCategory = 'all';
+            filterPills.forEach(p => {
+                if (p.getAttribute('data-category') === 'all') p.classList.add('active');
+                else p.classList.remove('active');
+            });
+            filterArticles();
+        }
+    </script>
+    <script src="mobile-nav.js"></script>
+</body>
+
+</html>

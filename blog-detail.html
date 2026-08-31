@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how Autologous Serum Eye Drops (ASED) compounded from your own blood serum provide natural, preservative-free relief and tissue healing for severe dry eyes.">
+    <title>Understanding Autologous Serum Eye Drops (ASED) for Dry Eyes | Ricker Pharmacy Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="blog-detail-page">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container text-center">
+            <p>Prescriptions filled in 15 minutes or less! Call today: (555) 123-4567</p>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+            </a>
+            <nav class="nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <a href="index.html" class="mobile-nav-logo">
+                        <img src="assets/main-logo.png" alt="Ricker Pharmacy Logo">
+                    </a>
+                    <button class="mobile-nav-close" id="mobileNavClose" onclick="closeMobileNav()" aria-label="Close Navigation">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Compounding Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="autologous-serum-drops.html"><i class="fa-solid fa-eye-dropper"></i> Autologous Serum Drops</a></li>
+                                        <li><a href="hormone-replacement-therapy.html"><i class="fa-solid fa-vial"></i> Hormone Replacement Therapy</a></li>
+                                        <li><a href="dental.html"><i class="fa-solid fa-tooth"></i> Dental</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-mars"></i> Men's Health</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-baby"></i> Pediatrics</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-person-running"></i> Sports Medicine</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> IM Shots</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Custom Care for You</h4>
+                                    <p>Discover personalized compounding solutions tailored to your unique needs.</p>
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Compounding">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">Other Services <i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-links">
+                                    <ul>
+                                        <li><a href="#"><i class="fa-solid fa-mortar-pestle"></i> Prescription Compounding</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-syringe"></i> Flu Shots and Immunizations</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-box"></i> Adherence Packaging</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-rotate"></i> Medication Synchronization</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-stethoscope"></i> Medication Therapy Management Services</a></li>
+                                        <li><a href="#"><i class="fa-solid fa-heart-pulse"></i> Health Screenings</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-promo bg-blue">
+                                    <h4>Comprehensive Pharmacy Care</h4>
+                                    <p>From immunizations to medication synchronization, we offer comprehensive services to simplify your life.</p>
+                                    <img src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&q=80&w=400" alt="Pharmacy Services">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li class="lang-dropdown">
+                        <a href="#"><i class="fa-solid fa-globe"></i> English <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <ul class="simple-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Tagalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-contact-item">
+                        <a href="contact.html" class="btn btn-primary mobile-nav-contact-btn">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="contact.html" class="btn btn-primary header-btn">Contact Us</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu(event)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog-detail-main">
+        <!-- Hero Banner Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <h1>Blog Details</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <a href="blog.html">Blog</a>
+                        <i class="fa-solid fa-chevron-right separator"></i>
+                        <span>Understanding ASED</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article & Sidebar Layout Section -->
+        <section class="article-section">
+            <div class="container">
+                <div class="article-layout">
+
+                    <!-- Left: Main Article Body -->
+                    <article class="article-main-content">
+                        
+                        <!-- Article Header Meta -->
+                        <div class="article-header">
+                            <div class="article-tags-row">
+                                <span class="article-badge badge-green"><i class="fa-solid fa-eye-dropper"></i> Eye Health</span>
+                                <span class="article-badge badge-blue"><i class="fa-solid fa-flask"></i> Compounding</span>
+                            </div>
+                            <h1 class="article-title">Understanding Autologous Serum Eye Drops (ASED): The Natural Cure for Severe Dry Eyes</h1>
+                            
+                            <div class="article-author-bar">
+                                <div class="author-meta-block">
+                                    <div class="author-avatar"><i class="fa-solid fa-user-doctor"></i></div>
+                                    <div class="author-text">
+                                        <strong>TJ Patel, RPh</strong>
+                                        <span>Clinical Compounding Pharmacist</span>
+                                    </div>
+                                </div>
+                                <div class="article-date-meta">
+                                    <span><i class="fa-regular fa-calendar-days"></i> October 14, 2026</span>
+                                    <span><i class="fa-regular fa-clock"></i> 5 min read</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Featured Image with Soft Elevation -->
+                        <div class="article-featured-image">
+                            <img src="assets/pharmacy-shelves.jpg" alt="Compounding Autologous Serum Eye Drops at Ricker Pharmacy">
+                            <span class="image-caption"><i class="fa-solid fa-circle-info"></i> Sterile lab preparation of customized 20%–50% ASED vials at Ricker Pharmacy.</span>
+                        </div>
+
+                        <!-- Key Takeaways Callout Box -->
+                        <div class="article-takeaways-card">
+                            <div class="takeaways-header">
+                                <i class="fa-solid fa-lightbulb"></i>
+                                <h3>Key Takeaways at a Glance</h3>
+                            </div>
+                            <ul class="takeaways-list">
+                                <li><strong>100% Biocompatible:</strong> Created from your own purified blood serum, eliminating allergic risks and stinging.</li>
+                                <li><strong>Biological Healing:</strong> Rich in Epidermal Growth Factor (EGF), Vitamin A, Fibronectin, and Albumin that artificial tears cannot mimic.</li>
+                                <li><strong>Sterile Compounding:</strong> Prepared in Ricker Pharmacy's USP &lt;797&gt; cleanroom to ensure absolute sterility and optimal concentration.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Section 1 -->
+                        <div class="article-body-text">
+                            <h2>The Limits of Conventional Artificial Tears</h2>
+                            <p>
+                                Millions of Americans suffer from chronic Dry Eye Disease (DED), experiencing persistent gritty sensations, burning, blurred vision, and light sensitivity. For many patients, over-the-counter lubricating eye drops only offer temporary, superficial moisture.
+                            </p>
+                            <p>
+                                Commercial artificial tears lack essential biochemical components found in natural human tears. Furthermore, frequent use of preservative-laden eye drops can cause corneal toxicity, leading to epithelial damage and worsened ocular inflammation over time.
+                            </p>
+
+                            <h2>What Are Autologous Serum Eye Drops (ASED)?</h2>
+                            <p>
+                                <strong>Autologous Serum Eye Drops (ASED)</strong> are custom-formulated ophthalmic drops made directly from a patient’s own blood serum. Because blood serum and natural tears share nearly identical biochemical properties, pH, and osmolarity, ASED represents the closest biological substitute to healthy tears.
+                            </p>
+
+                            <!-- Comparison Feature Box -->
+                            <div class="article-comparison-box">
+                                <div class="comparison-col comp-standard">
+                                    <h4><i class="fa-solid fa-xmark"></i> Standard Eye Drops</h4>
+                                    <ul>
+                                        <li>Synthetic lubricants (carboxymethylcellulose)</li>
+                                        <li>No cellular growth factors or healing proteins</li>
+                                        <li>Contains chemical preservatives (in multi-dose bottles)</li>
+                                        <li>Provides temporary surface hydration only</li>
+                                    </ul>
+                                </div>
+                                <div class="comparison-col comp-ased">
+                                    <h4><i class="fa-solid fa-check"></i> Autologous Serum Drops</h4>
+                                    <ul>
+                                        <li>100% natural, patient-derived serum</li>
+                                        <li>Loaded with EGF, TGF-β, Fibronectin &amp; Albumin</li>
+                                        <li>Completely preservative-free &amp; non-toxic</li>
+                                        <li>Actively repairs and regenerates corneal nerves</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <h2>Biological Growth Factors: How Serum Heals the Eye</h2>
+                            <p>
+                                Human serum contains a potent mixture of biologically active elements essential for ocular surface maintenance and epithelial cell regeneration:
+                            </p>
+
+                            <div class="article-factors-grid">
+                                <div class="factor-item">
+                                    <div class="factor-icon"><i class="fa-solid fa-dna"></i></div>
+                                    <div class="factor-text">
+                                        <h4>Epidermal Growth Factor (EGF)</h4>
+                                        <p>Accelerates the healing rate of damaged corneal and conjunctival epithelial cells.</p>
+                                    </div>
+                                </div>
+                                <div class="factor-item">
+                                    <div class="factor-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                                    <div class="factor-text">
+                                        <h4>Immunoglobulins (IgA, IgG) &amp; Lysozymes</h4>
+                                        <p>Provides powerful natural antimicrobial defense against surface ocular pathogens.</p>
+                                    </div>
+                                </div>
+                                <div class="factor-item">
+                                    <div class="factor-icon"><i class="fa-solid fa-link"></i></div>
+                                    <div class="factor-text">
+                                        <h4>Fibronectin &amp; Substance P</h4>
+                                        <p>Promotes cellular adhesion, anchoring new epithelial cells firmly to the cornea.</p>
+                                    </div>
+                                </div>
+                                <div class="factor-item">
+                                    <div class="factor-icon"><i class="fa-solid fa-droplet"></i></div>
+                                    <div class="factor-text">
+                                        <h4>Albumin &amp; Vitamin A</h4>
+                                        <p>Inhibits damaging inflammatory enzymes and stabilizes the pre-corneal tear film.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h2>How Ricker Pharmacy Prepares Your Serum Drops</h2>
+                            <p>
+                                At Ricker Pharmacy, the preparation of autologous serum drops is carried out with meticulous adherence to sterile compounding standards:
+                            </p>
+                            <ol class="article-steps-list">
+                                <li>
+                                    <strong>Convenient Blood Draw:</strong> A simple blood sample is drawn from the patient via our streamlined on-site or partnered lab protocol.
+                                </li>
+                                <li>
+                                    <strong>Clotting &amp; Centrifugation:</strong> The blood is allowed to clot naturally before being spun in a medical-grade centrifuge to cleanly isolate the clear serum from red blood cells.
+                                </li>
+                                <li>
+                                    <strong>Sterile Dilution:</strong> In our certified ISO Class 5 laminar airflow hood, our pharmacists dilute the serum (commonly 20%, 30%, 40%, or 50% concentration) with sterile, preservative-free saline.
+                                </li>
+                                <li>
+                                    <strong>Unit Packaging &amp; Freezing:</strong> The solution is divided into UV-shielded amber dropper vials and frozen immediately to preserve growth factor stability for up to 6 months.
+                                </li>
+                            </ol>
+
+                            <!-- Pharmacist Quote Callout -->
+                            <blockquote class="article-quote-box">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <p>
+                                    "When conventional therapies fail, autologous serum drops offer patients real, physiological recovery. Because the medication is derived entirely from their own body, tolerance is virtually 100%."
+                                </p>
+                                <cite>— TJ Patel, RPh, Senior Pharmacist at Ricker Pharmacy</cite>
+                            </blockquote>
+
+                            <h2>Who Is an Ideal Candidate for ASED?</h2>
+                            <p>
+                                Ophthalmologists and corneal specialists frequently prescribe Autologous Serum Eye Drops for patients with:
+                            </p>
+                            <ul class="article-bullet-list">
+                                <li><strong>Severe Dry Eye Syndrome (Aqueous-Deficient or Evaporative)</strong> resistant to artificial tears and punctal plugs.</li>
+                                <li><strong>Sjögren’s Syndrome &amp; Autoimmune Ocular Disease</strong> causing chronic severe tear deficiency.</li>
+                                <li><strong>Persistent Epithelial Defects (PED)</strong> and recurrent corneal erosions.</li>
+                                <li><strong>Neurotrophic Keratopathy</strong> with impaired corneal sensation.</li>
+                                <li><strong>Post-LASIK or Post-Corneal Transplant</strong> delayed healing.</li>
+                            </ul>
+
+                            <h2>Storage &amp; Usage Instructions for Patients</h2>
+                            <p>
+                                Because ASED contains no artificial chemical preservatives, proper temperature control is essential:
+                            </p>
+                            <ul class="article-bullet-list">
+                                <li><strong>Current In-Use Bottle:</strong> Store in the refrigerator (2°C to 8°C) and use within <strong>7 to 10 days</strong>.</li>
+                                <li><strong>Reserve Bottles:</strong> Store unopened dropper bottles in your home freezer (-20°C) for up to <strong>3 to 6 months</strong>.</li>
+                                <li><strong>Instillation Tip:</strong> Instill 1 drop into the affected eye(s) 4 to 8 times daily, or as precisely directed by your eye care physician.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Article Footer: Share, Tags, & Author Bio -->
+                        <div class="article-footer-area">
+                            <div class="article-tags-wrapper">
+                                <strong>Tags:</strong>
+                                <span class="tag-pill">#EyeHealth</span>
+                                <span class="tag-pill">#ASEDDrops</span>
+                                <span class="tag-pill">#DryEyeRelief</span>
+                                <span class="tag-pill">#CompoundingPharmacy</span>
+                                <span class="tag-pill">#CornealCare</span>
+                            </div>
+                        </div>
+
+                        <!-- Related Blogs Section -->
+                        <div class="article-related-section">
+                            <h3 class="related-title">Related Pharmacy Blogs</h3>
+                            <div class="related-grid">
+                                <div class="related-card">
+                                    <a href="autologous-serum-drops.html" class="related-card-link">
+                                        <img src="assets/medical-supplies.jpg" alt="Prescription Compounding">
+                                        <div class="related-card-content">
+                                            <span class="related-badge"><i class="fa-solid fa-mortar-pestle"></i> Compounding</span>
+                                            <h4>Why Prescription Compounding Is the Future of Personalized Medicine</h4>
+                                            <span class="related-date"><i class="fa-regular fa-calendar"></i> Sep 24, 2026</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="related-card">
+                                    <a href="blog.html" class="related-card-link">
+                                        <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=400" alt="Hormone Replacement">
+                                        <div class="related-card-content">
+                                            <span class="related-badge"><i class="fa-solid fa-vial"></i> Hormone Care</span>
+                                            <h4>Customized Hormone Replacement Therapy (BHRT) Explained</h4>
+                                            <span class="related-date"><i class="fa-regular fa-calendar"></i> Oct 02, 2026</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <!-- Right: Sticky Sidebar -->
+                    <aside class="article-sidebar">
+
+                        <!-- Action Card: Need ASED Prescription? -->
+                        <div class="sidebar-action-card">
+                            <h3>Need Autologous Serum Drops?</h3>
+                            <p>Have your eye doctor or ophthalmologist send your prescription directly to Ricker Pharmacy. We coordinate fast, safe compounding.</p>
+                            <a href="autologous-serum-drops.html" class="btn btn-secondary sidebar-action-btn">
+                                <i class="fa-solid fa-file-prescription"></i> Explore ASED Service
+                            </a>
+                            <div class="action-phone-prompt">
+                                <span>Questions? Speak with a pharmacist:</span>
+                                <a href="tel:5551234567" class="action-phone-link"><i class="fa-solid fa-phone"></i> (555) 123-4567</a>
+                            </div>
+                        </div>
+
+                        <!-- Recent Blogs Widget -->
+                        <div class="sidebar-recent-card">
+                            <h4 class="sidebar-card-title"><i class="fa-solid fa-newspaper"></i> Recent Blogs</h4>
+                            <div class="recent-posts-list">
+                                <div class="recent-post-item">
+                                    <img src="https://images.unsplash.com/photo-1576602976047-174e57a47881?auto=format&fit=crop&q=80&w=150" alt="BHRT Compounding">
+                                    <div class="recent-post-details">
+                                        <a href="blog.html">Customized Hormone Replacement Therapy (BHRT)</a>
+                                        <span><i class="fa-regular fa-calendar"></i> Oct 02, 2026</span>
+                                    </div>
+                                </div>
+                                <div class="recent-post-item">
+                                    <img src="assets/medical-supplies.jpg" alt="Prescription Compounding">
+                                    <div class="recent-post-details">
+                                        <a href="blog.html">Why Prescription Compounding Is Personalized Medicine</a>
+                                        <span><i class="fa-regular fa-calendar"></i> Sep 24, 2026</span>
+                                    </div>
+                                </div>
+                                <div class="recent-post-item">
+                                    <img src="assets/full-blister-packs.jpg" alt="Medication Sync">
+                                    <div class="recent-post-details">
+                                        <a href="blog.html">Medication Synchronization: Simplify Your Routine</a>
+                                        <span><i class="fa-regular fa-calendar"></i> Sep 15, 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pharmacy Hours & Location Card -->
+                        <div class="sidebar-contact-card">
+                            <h4 class="sidebar-card-title"><i class="fa-solid fa-location-dot"></i> Ricker Pharmacy</h4>
+                            <p class="sidebar-contact-line"><i class="fa-solid fa-building"></i> 123 Healthway Street, Medical City</p>
+                            <p class="sidebar-contact-line"><i class="fa-solid fa-phone"></i> (555) 123-4567</p>
+                            <p class="sidebar-contact-line"><i class="fa-solid fa-envelope"></i> rickerpharmacy@gmail.com</p>
+                            <div class="sidebar-badge-row">
+                                <span><i class="fa-solid fa-clock"></i> Mon–Fri: 9AM–6PM</span>
+                                <span><i class="fa-solid fa-clock"></i> Sat: 9AM–1PM</span>
+                            </div>
+                        </div>
+
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo light-logo">
+                    <img src="assets/download.png" alt="Ricker Pharmacy Logo">
+                </a>
+                <p>Your trusted local pharmacy committed to serving your health needs with compassion, specialized compounding, and personal care.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Ricker-Pharmacy/100054351018151" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Peptide Therapy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Compounding Services</h4>
+                <ul>
+                    <li><a href="autologous-serum-drops.html">Autologous Serum Drops</a></li>
+                    <li><a href="hormone-replacement-therapy.html">Hormone Replacement Therapy</a></li>
+                    <li><a href="dental.html">Dental</a></li>
+                    <li><a href="#">Men's Health</a></li>
+                    <li><a href="#">Pediatrics</a></li>
+                    <li><a href="#">Sports Medicine</a></li>
+                    <li><a href="#">IM Shots</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Other Services</h4>
+                <ul>
+                    <li><a href="#">Prescription Compounding</a></li>
+                    <li><a href="#">Flu Shots and Immunizations</a></li>
+                    <li><a href="#">Adherence Packaging</a></li>
+                    <li><a href="#">Medication Synchronization</a></li>
+                    <li><a href="#">Medication Therapy Management</a></li>
+                    <li><a href="#">Health Screenings</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Refill Prescriptions</a></li>
+                    <li><a href="#">HIPAA</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p class="contact-info"><i class="fa-solid fa-location-dot"></i> <span>123 Healthway Street, Medical City, 12345</span></p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> <span>(555) 123-4567</span></p>
+                <p class="contact-info"><i class="fa-solid fa-envelope"></i> <span>rickerpharmacy@gmail.com</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Ricker Pharmacy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="mobile-nav.js"></script>
+</body>
+
+</html>
